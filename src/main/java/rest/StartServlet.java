@@ -20,6 +20,7 @@ public class StartServlet extends HttpServlet {
     public void init() throws ServletException {
         Flyway flyway = Flyway.configure().dataSource("jdbc:postgresql://ec2-52-30-81-192.eu-west-1.compute.amazonaws.com:5432/d7us9cuv0gfcfh", "ykdnhbaritwmgn", "9f9e57371797d72553144bb143670029842475cb1dca453aefbf1e2f28761f34").load();
         flyway.repair();
+        flyway.clean();
         flyway.migrate();
         noteService = new NoteServiceImpl();
     }
