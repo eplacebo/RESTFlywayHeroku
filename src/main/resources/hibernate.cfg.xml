@@ -4,12 +4,11 @@
 
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.connection.url">jdbc:postgresql://ec2-63-33-14-215.eu-west-1.compute.amazonaws.com:5432/d601e0aeu8a0ub</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://ec2-52-30-81-192.eu-west-1.compute.amazonaws.com:5432/d7us9cuv0gfcfh</property>
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
         <property name="hibernate.hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
-        <property name="hibernate.connection.username">woohgaxrqhelmn</property>
-        <property name="hibernate.connection.password">e8f6b6f873e315f918c0438253f17433a9e4cccbd118cf97fc953d6aceba84ef
-        </property>
+        <property name="hibernate.connection.username">ykdnhbaritwmgn</property>
+        <property name="hibernate.connection.password">9f9e57371797d72553144bb143670029842475cb1dca453aefbf1e2f28761f34</property>
         <property name="show_sql">true</property>
         <property name="hibernate.current_session_context_class">thread</property>
 
@@ -18,3 +17,4 @@
         <mapping class="entity.User"/>
     </session-factory>
 </hibernate-configuration>
+
