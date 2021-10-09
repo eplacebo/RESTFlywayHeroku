@@ -22,9 +22,9 @@
                             <configuration>
                                 <artifactItems>
                                     <artifactItem>
-                                        <groupId>com.heroku</groupId>
+                                        <groupId>com.github.jsimone</groupId>
                                         <artifactId>webapp-runner</artifactId>
-                                        <version>${webapp-runner.version}</version>
+                                        <version>9.0.27.1</version>
                                         <destFileName>webapp-runner.jar</destFileName>
                                     </artifactItem>
                                 </artifactItems>
@@ -113,11 +113,14 @@
             <version>8.0.0</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.github.jsimone/webapp-runner -->
         <dependency>
-            <groupId>com.heroku</groupId>
-            <artifactId>webapp-runner-main</artifactId>
-            <version>${webapp-runner.version}</version>
+            <groupId>com.github.jsimone</groupId>
+            <artifactId>webapp-runner</artifactId>
+            <version>9.0.27.1</version>
+            <scope>provided</scope>
         </dependency>
+
     </dependencies>
 
 
