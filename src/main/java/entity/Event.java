@@ -22,7 +22,7 @@ public class Event {
     @Column(name = "date_event")
     private Timestamp dateEvent;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     @JoinColumn(name = "id_file_ref", referencedColumnName = "id_file")
     private FileInfo fileInfo;
 
